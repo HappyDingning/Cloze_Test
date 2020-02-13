@@ -16,7 +16,7 @@ CLOTH数据集来自CMU官网:[CMU website](http://www.cs.cmu.edu/~glai1/data/cl
 'bert-base-cased': "https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-cased.tar.gz",  
 'bert-large-cased': "https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-cased.tar.gz",  
 'bert-base-multilingual-uncased': "https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-multilingual-uncased.tar.gz",  
-'bert-base-multilingual-cased': "https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-multilingual-cased.tar.gz", 
+'bert-base-multilingual-cased': "https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-multilingual-cased.tar.gz",   
 'bert-base-chinese': "https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese.tar.gz"  
 
 
@@ -34,7 +34,7 @@ CLOTH数据集来自CMU官网:[CMU website](http://www.cs.cmu.edu/~glai1/data/cl
 ```
 python3 data_util.py
 ```
-注意：你需要修改data_util.py中语料库的本地路径
+（注意：你需要修改data_util.py中语料库的本地路径）
 
 
 ### 模型微调 
@@ -42,4 +42,4 @@ python3 data_util.py
 ```
 ./run.sh
 ```
-同样，相关参数也需要改为本地路径
+（同样，你也需要修改run.sh中预训练模型的本地路径）
