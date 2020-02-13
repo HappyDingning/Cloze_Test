@@ -204,14 +204,14 @@ if __name__ == '__main__':
     #'''
     data_collections = ['train', 'valid', 'test']
     for item in data_collections:    
-        args.data_dir = '/root/CLOTH/{}'.format(item)
+        args.data_dir = './CLOTH/{}'.format(item)
         args.pre = args.post = 0
-        args.bert_model ='/root/bert-base-uncased-vocab.txt'
-        args.save_name = '/root/data/{}-bert-base-uncased.pt'.format(item)
+        args.bert_model ='./bert-large-uncased-vocab.txt'
+        args.save_name = './data/{}-bert-large-uncased.pt'.format(item)
         data = Preprocessor(args)
     '''
     args.data_dir = './data/'
-    args.bert_model = 'bert-base-uncased'
+    args.bert_model = 'bert-large-uncased'
     args.cache_size = 32
     args.batch_size = 2
     train_data = Loader(args.data_dir, 'valid.pt', args.cache_size, args.batch_size)

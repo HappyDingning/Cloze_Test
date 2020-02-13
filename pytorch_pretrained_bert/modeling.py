@@ -1106,6 +1106,6 @@ if __name__ == '__main__':
     ans = torch.zeros(bsz).long()
     inp = [articles, articles_mask, ops, ops_mask, question_id, question_pos]
     tgt = ans
-    model = BertForCloth.from_pretrained('bert-base-uncased',
+    model = BertForCloth.from_pretrained('./bert-large-uncased.tar.gz',
           cache_dir=PYTORCH_PRETRAINED_BERT_CACHE / 'distributed_{}'.format(-1))
     loss, acc = model(inp, tgt)
